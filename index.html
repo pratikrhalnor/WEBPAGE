@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub Commands</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        /* Awesome CSS for Git & GitHub Commands */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #282a36;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #ff79c6;
+    font-weight: 600;
+}
+
+h2 {
+    color: #8be9fd;
+    border-bottom: 2px solid #50fa7b;
+    padding-bottom: 5px;
+}
+
+.command {
+    background: #44475a;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.command:hover {
+    transform: scale(1.03);
+    background: #6272a4;
+}
+
+b {
+    color: #50fa7b;
+    font-weight: 600;
+}
+
+span {
+    color: #f8f8f2;
+    display: block;
+    margin-top: 5px;
+}
+
+    </style>
+    <div class="container">
+        <h1>🚀 Git & GitHub Commands</h1>
+        
+        <h2>📌 Basic Commands</h2>
+        <div class="command"><b>git --version</b><br><span>Check the installed Git version.</span></div>
+        <div class="command"><b>git config --global user.name "Your Name"</b><br><span>Set the global username.</span></div>
+        <div class="command"><b>git config --global user.email "you@example.com"</b><br><span>Set the global email.</span></div>
+        <div class="command"><b>git init</b><br><span>Initialize a new Git repository.</span></div>
+        <div class="command"><b>git clone &lt;repository_url&gt;</b><br><span>Clone an existing repository.</span></div>
+        
+        <h2>📂 Working with Files</h2>
+        <div class="command"><b>git status</b><br><span>Check the status of your working directory.</span></div>
+        <div class="command"><b>git add &lt;filename&gt;</b><br><span>Stage a specific file for commit.</span></div>
+        <div class="command"><b>git add .</b><br><span>Stage all changed files for commit.</span></div>
+        <div class="command"><b>git commit -m "Commit message"</b><br><span>Commit changes with a message.</span></div>
+        <div class="command"><b>git rm &lt;filename&gt;</b><br><span>Remove a file from the repository.</span></div>
+        
+        <h2>🌿 Branching</h2>
+        <div class="command"><b>git branch</b><br><span>List all branches.</span></div>
+        <div class="command"><b>git branch &lt;branch_name&gt;</b><br><span>Create a new branch.</span></div>
+        <div class="command"><b>git checkout &lt;branch_name&gt;</b><br><span>Switch to another branch.</span></div>
+        <div class="command"><b>git checkout -b &lt;branch_name&gt;</b><br><span>Create and switch to a new branch.</span></div>
+        <div class="command"><b>git merge &lt;branch_name&gt;</b><br><span>Merge a branch into the current branch.</span></div>
+        
+        <h2>🌍 Remote Repositories</h2>
+        <div class="command"><b>git remote add origin &lt;repository_url&gt;</b><br><span>Add a remote repository.</span></div>
+        <div class="command"><b>git remote -v</b><br><span>Show remote repository details.</span></div>
+        <div class="command"><b>git push -u origin &lt;branch_name&gt;</b><br><span>Push changes to a remote branch.</span></div>
+        <div class="command"><b>git pull origin &lt;branch_name&gt;</b><br><span>Pull updates from a remote repository.</span></div>
+        
+        <h2>🔄 Undoing Changes</h2>
+        <div class="command"><b>git reset --hard HEAD</b><br><span>Reset working directory to the last commit.</span></div>
+        <div class="command"><b>git revert &lt;commit_hash&gt;</b><br><span>Undo a specific commit.</span></div>
+        <div class="command"><b>git stash</b><br><span>Save changes temporarily without committing.</span></div>
+        <div class="command"><b>git stash pop</b><br><span>Apply stashed changes back to the working directory.</span></div>
+    </div>
+</body>
+</html>
